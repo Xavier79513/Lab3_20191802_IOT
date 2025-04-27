@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#E0F7FA">
+
+    <!-- Icono de trofeo -->
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/ic_trophy"
+        android:layout_marginBottom="24dp"
+        app:tint="#FFD700" />
+
+    <!-- Título -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Resultados"
+        android:textSize="28sp"
+        android:textColor="#333333"
+        android:textStyle="bold"
+        android:layout_marginBottom="32dp"
+        android:fontFamily="sans-serif-condensed"/>
+
+    <!-- Tarjeta de resultados -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/card_background"
+        android:padding="24dp"
+        android:elevation="4dp"
+        android:layout_marginBottom="24dp">
+
+        <TextView
+            android:id="@+id/textCorrectas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Correctas: 0"
+            android:textSize="20sp"
+            android:textColor="#4CAF50"
+            android:layout_marginBottom="16dp"
+            android:drawablePadding="8dp"
+            android:drawableStart="@drawable/ic_check_circle"
+            android:fontFamily="sans-serif-medium"/>
+
+        <TextView
+            android:id="@+id/textIncorrectas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Incorrectas: 0"
+            android:textSize="20sp"
+            android:textColor="#F44336"
+            android:layout_marginBottom="16dp"
+            android:drawablePadding="8dp"
+            android:drawableStart="@drawable/ic_cancel"
+            android:fontFamily="sans-serif-medium"/>
+
+        <TextView
+            android:id="@+id/textNoRespondidas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No Respondidas: 0"
+            android:textSize="20sp"
+            android:textColor="#FF9800"
+            android:drawablePadding="8dp"
+            android:drawableStart="@drawable/ic_help_circle"
+            android:fontFamily="sans-serif-medium"/>
+    </LinearLayout>
+
+    <!-- Botón -->
+    <Button
+        android:id="@+id/btnVolverAJugar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Volver a Jugar"
+        android:backgroundTint="#6200EE"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:padding="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif-medium"/>
+</LinearLayout>
